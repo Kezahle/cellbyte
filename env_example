@@ -1,0 +1,24 @@
+# LLM Configuration
+# Choose provider: openai or anthropic
+LLM_PROVIDER=openai
+
+# OpenAI Configuration (required if using OpenAI)
+OPENAI_API_KEY=sk-your-openai-api-key-here
+
+# Execution Configuration
+# Timeout for code execution in seconds
+CODE_EXECUTION_TIMEOUT=30
+
+# Use Docker for code execution (more secure)
+# Set to true if Docker is installed, false for subprocess execution
+USE_DOCKER_EXECUTION=false
+
+# Docker image to use for execution
+DOCKER_IMAGE=python:3.11-slim
+
+# Data Configuration
+# Maximum CSV file size in MB
+MAX_CSV_SIZE_MB=100
+
+# Number of rows to show in schema preview
+MAX_ROWS_PREVIEW=10
